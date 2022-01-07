@@ -17,7 +17,7 @@ steps:
     port: 22
     key:
       from_secret: SSH_KEY
-    source: dist
+    source: build
     target: ~/apps/blog_svelte
     username:
       from_secret: USER
