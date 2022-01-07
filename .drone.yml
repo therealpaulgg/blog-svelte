@@ -1,0 +1,45 @@
+kind: pipeline
+type: docker
+name: blog_svelte
+
+steps:
+- name: build
+  image: "node:lts-alpine"
+  commands:
+  - yarn
+  - yarn build
+
+- name: copyfiles
+  image: appleboy/drone-scp
+  settings:
+    host:
+      from_secret: HOST
+    port: 22
+    key:
+      from_secret: SSH_KEY
+    source: dist
+    target: ~/apps/blog_svelte
+    username:
+      from_secret: USER
+  when:
+    branch: 
+    - master
+    event: 
+    - push
+
+- name: deploy
+  image: appleboy/drone-ssh
+  settings:
+    host:
+      from_secret: HOST
+    port: 22
+    key:
+      from_secret: SSH_KEY
+    username:
+      from_secret: USER
+    script: bash ~/apps/blog_svelte/deploy.sh
+  when:
+    branch:
+    - master
+    event:
+    - push
