@@ -23,7 +23,7 @@ steps:
       from_secret: USER
   when:
     branch: 
-    - master
+    - main
     event: 
     - push
 
@@ -40,6 +40,6 @@ steps:
     script: bash ~/apps/blog_svelte/deploy.sh
   when:
     branch:
-    - master
+    - main
     event:
     - push
