@@ -6,12 +6,16 @@ import remark2rehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import frontmatter from "remark-frontmatter";
 import highlight from "rehype-highlight";
-import yaml from "yaml"
+import django from "highlight.js/lib/languages/django";
+import yaml from "yaml";
 import dayjs from "dayjs";
 
 const parser = unified().use(parse).use(gfm).use(frontmatter, ["yaml"]);
 
-const runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
+const runner = unified()
+    .use(remark2rehype)
+    .use(highlight, { languages: { django } })
+    .use(rehypeStringify);
 
 export function process(filename: string): { metadata: any; content: string } {
     const tree = parser.parse(vfile.readSync(filename));
@@ -19,7 +23,10 @@ export function process(filename: string): { metadata: any; content: string } {
     if (tree.children.length > 0 && tree.children[0].type == "yaml") {
         metadata = yaml.parse(tree.children[0].value);
         tree.children = tree.children.slice(1, tree.children.length);
-        metadata.date = dayjs(metadata.date).format("MMM D, YYYY");
+        metadata.createdAt = dayjs(metadata.createdAt).format("MMM D, YYYY");
+        metadata.updatedAt = dayjs(metadata.createdAt).isSame(metadata.updatedAt)
+            ? null
+            : dayjs(metadata.updatedAt).format("MMM D, YYYY");
     }
     let content = runner.stringify(runner.runSync(tree));
     if (!metadata) {

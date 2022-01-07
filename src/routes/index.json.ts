@@ -18,8 +18,8 @@ export function get(): { body: string } {
     // sort the posts by create date.
     posts.sort(
         (a, b) =>
-            dayjs(a.metadata.date, "MMM D, YYYY").valueOf() -
-            dayjs(b.metadata.date, "MMM D, YYYY").valueOf()
+            dayjs(b.metadata.createdAt, "MMM D, YYYY").valueOf() -
+            dayjs(a.metadata.createdAt, "MMM D, YYYY").valueOf()
     );
     const body = JSON.stringify(posts);
 
