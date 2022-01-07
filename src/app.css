@@ -27,6 +27,9 @@
     ul {
         @apply list-disc mt-4 ml-8;
     }
+    ul ul {
+        @apply list-disc mt-0 ml-8;
+    }
     pre {
         @apply mt-4;
     }

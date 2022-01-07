@@ -1,6 +1,6 @@
 ---
-createdAt: '2021-01-07'
-updatedAt: '2021-01-07'
+createdAt: '2022-01-07'
+updatedAt: '2022-01-07'
 excerpt: "I've written a new blog! Read to find out why."
 title: New Blog!
 ---
