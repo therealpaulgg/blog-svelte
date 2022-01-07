@@ -30,4 +30,7 @@
     pre {
         @apply mt-4;
     }
+    a {
+        @apply hover:text-emerald-300
+    }
 }

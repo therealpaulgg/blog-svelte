@@ -1,5 +1,6 @@
 <script lang="ts">
-import dayjs from "dayjs";
+    import { page } from "$app/stores";
+    import dayjs from "dayjs";
 
     import "../app.css";
 </script>
@@ -11,19 +12,19 @@ import dayjs from "dayjs";
     />
 </svelte:head>
 
-<div class="relative min-h-screen bg-gray-800 text-white font-body pb-16">
+<div class="relative min-h-screen bg-slate-800 text-white font-body pb-16">
     <nav class="bg-emerald-500 p-3 mb-3">
         <div class="mx-auto container flex gap-6 text-lg">
-            <a href="/">Home</a>
+            <a href="/" class={$page.url.pathname === "/" ? "text-white" : "text-gray-200"}>Home</a>
+            <a href="https://paulgellai.dev">Main Website</a>
         </div>
     </nav>
 
     <div class="mx-auto container pb-16"><slot /></div>
-    <footer class="bottom-0 left-0 right-0 p-3 absolute w-full bg-gray-500">
+    <footer class="bottom-0 left-0 right-0 p-3 absolute w-full bg-slate-700">
         <div class="mx-auto container text-center">
-            Copyright © {dayjs().year()} <a class="hover:text-emerald-300" href="https://paulgellai.dev"
-                >Paul Gellai.</a
-            > All rights reserved.
+            Copyright © {dayjs().year()} <a href="https://paulgellai.dev">Paul Gellai.</a> All rights
+            reserved.
         </div>
     </footer>
 </div>

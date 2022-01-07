@@ -22,14 +22,12 @@
     <title>{post.metadata.title}</title>
 </svelte:head>
 
-<a class="hover:text-emerald-300" href="/"><Icon data={faArrowLeft} /> Back</a>
+<a href="/"><Icon data={faArrowLeft} /> Back</a>
 
-<div class="bg-gray-600 mt-2 p-2 rounded">
+<div class="bg-slate-700 shadow-lg mt-2 p-2 rounded">
     <h1 class="mt-0">{post.metadata.title}</h1>
     <div class="flex gap-6 items-center mt-2">
-        <a class="hover:text-emerald-300" target="_blank" href="https://github.com/therealpaulgg"
-            >therealpaulgg</a
-        >
+        <a target="_blank" href="https://github.com/therealpaulgg">therealpaulgg</a>
         <div class="flex items-center gap-2">
             <Icon data={faCalendarAlt} />{post.metadata.createdAt}
         </div>
