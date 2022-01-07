@@ -26,8 +26,10 @@
 
 <div class="bg-slate-700 shadow-lg mt-2 p-2 rounded">
     <h1 class="mt-0">{post.metadata.title}</h1>
-    <div class="flex gap-6 items-center mt-2">
+    <div class="mt-2">
         <a target="_blank" href="https://github.com/therealpaulgg">therealpaulgg</a>
+    </div>
+    <div class="flex gap-6 items-center mt-2">
         <div class="flex items-center gap-2">
             <Icon data={faCalendarAlt} />{post.metadata.createdAt}
         </div>

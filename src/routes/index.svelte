@@ -27,11 +27,6 @@
                 <div class="flex items-center gap-2">
                     <Icon data={faCalendarAlt} />{post.metadata.createdAt}
                 </div>
-                {#if post.metadata.updatedAt != null}
-                    <div class="flex items-center gap-2">
-                        <Icon data={faSyncAlt} />{post.metadata.updatedAt}
-                    </div>
-                {/if}
             </div>
             <div class="text-3xl">{post.metadata.title}</div>
             <div>{post.metadata.excerpt}</div>

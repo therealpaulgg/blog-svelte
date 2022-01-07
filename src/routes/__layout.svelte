@@ -20,7 +20,7 @@
         </div>
     </nav>
 
-    <div class="mx-auto container pb-16"><slot /></div>
+    <div class="mx-auto container pb-16 px-2"><slot /></div>
     <footer class="bottom-0 left-0 right-0 p-3 absolute w-full bg-slate-700">
         <div class="mx-auto container text-center">
             Copyright © {dayjs().year()} <a href="https://paulgellai.dev">Paul Gellai.</a> All rights
