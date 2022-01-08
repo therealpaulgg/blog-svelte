@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-    <title>Home</title>
+    <title>Paul's Blog</title>
 </svelte:head>
 
 {#each posts as post}
