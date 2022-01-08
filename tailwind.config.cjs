@@ -3,7 +3,8 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			body: ["Fira Code"]
+			body: ["Inconsolata"],
+			mono: ["Fira Code"]
 		}
 	},
 	plugins: []

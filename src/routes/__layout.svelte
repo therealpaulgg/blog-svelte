@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { page } from "$app/stores";
+    import { page, url } from "$app/stores";
     import dayjs from "dayjs";
 
     import "../app.css";
@@ -8,15 +8,15 @@
 <svelte:head>
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/rebecca.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/solar-flare.min.css"
     />
 </svelte:head>
 
 <div class="relative min-h-screen bg-slate-800 text-white font-body pb-16">
-    <nav class="bg-emerald-500 p-3 mb-3">
+    <nav class="bg-red-500 p-3 mb-3">
         <div class="mx-auto container flex gap-6 text-lg">
-            <a href="/" class={$page.url.pathname === "/" ? "text-white" : "text-gray-200"}>Home</a>
-            <a href="https://paulgellai.dev">Main Website</a>
+            <a href="/" class="navbar-link" class:active={$page.url.pathname === "/"}>Home</a>
+            <a href="https://paulgellai.dev" class="navbar-link">Main Website</a>
         </div>
     </nav>
 
@@ -31,4 +31,5 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap");
 </style>

@@ -37,6 +37,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@types/js-yaml": "^4.0.5",
     "dayjs": "^1.10.7",
+    "reading-time": "^1.5.0",
     "rehype-highlight": "^5.0.2",
     "rehype-stringify": "^9.0.2",
     "remark-frontmatter": "^4.0.1",

@@ -1,5 +1,6 @@
 // TODO the process function is broken, but why?????
 import { process } from "$lib/markdown";
+import readingTime from "reading-time"
 
 import fs from "fs";
 import dayjs from "dayjs";
@@ -9,10 +10,11 @@ export function get(): { body: string } {
         .readdirSync(`src/posts`)
         .filter((fileName) => /.+\.md$/.test(fileName))
         .map((fileName) => {
-            const { metadata } = process(`src/posts/${fileName}`);
+            const { metadata, content } = process(`src/posts/${fileName}`);
             return {
                 metadata,
-                slug: fileName.slice(0, -3)
+                slug: fileName.slice(0, -3),
+                readingTime: readingTime(content).text
             };
         });
     // sort the posts by create date.

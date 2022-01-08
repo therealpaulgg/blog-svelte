@@ -19,7 +19,7 @@ There were a couple annoying requirements:
 Anyway, here's the general outline:
 
 1. Obtain a publicly available Linux server. What? Yeah. I know you might already have your server at your house and stuff, whatever. But you need something that people can connect to...if they can't connect to your network, they'll have to connect to another one. So if you don't already have one, get some cloud hosted Linux server that's cheap to do the job, or if you have one in some other building across the country...or world.
-2. Install a VPN Server on your public Linux server. I personally recommend Pritunl, I didn't know it existed until [Linus Tech Tips covered it](https://www.youtube.com/watch?v=KcxKWudhkpc){style="text-decoration: underline";}. This is necessary so your server at home will connect to the VPN hosted on your Linux server.
+2. Install a VPN Server on your public Linux server. I personally recommend Pritunl, I didn't know it existed until [Linus Tech Tips covered it](https://www.youtube.com/watch?v=KcxKWudhkpc). This is necessary so your server at home will connect to the VPN hosted on your Linux server.
 3. At this point, your home server is able to access everything that's on the public server's network, and the public server can access the home server. Great! You'll have to do some iptables (the horror). The following should work:
 ```bash
 # The general syntactical structure of the command to use
