@@ -39,6 +39,9 @@
     code {
         @apply font-mono shadow-lg;
     }
+    hr {
+        @apply mt-4;
+    }
     .navbar-link {
         @apply text-gray-200 hover:text-red-300 no-underline text-xl;
     }
