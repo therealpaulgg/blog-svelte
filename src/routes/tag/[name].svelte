@@ -13,10 +13,8 @@
     export let posts;
     export let name;
     import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
-    import { faSyncAlt, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-    import { onMount } from "svelte";
+    import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
-    import { stringify } from "yaml";
     import Tag from "../../components/Tag.svelte";
 </script>
 

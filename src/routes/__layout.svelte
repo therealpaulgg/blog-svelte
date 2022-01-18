@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { page, url } from "$app/stores";
+    import { page } from "$app/stores";
     import dayjs from "dayjs";
 
     import "../app.css";

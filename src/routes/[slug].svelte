@@ -11,9 +11,7 @@
 
 <script lang="ts">
     export let post;
-    let createdAt = post.metadata.createdAt.toUpperCase();
-    let updatedAt = post.metadata.updatedAt ? post.metadata.updatedAt.toUpperCase() : null;
-    import { faSyncAlt, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+    import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
     import Post from "../components/Post.svelte";
 </script>
