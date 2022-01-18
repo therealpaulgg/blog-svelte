@@ -14,19 +14,20 @@
     export let name;
     import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
     import { faSyncAlt, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+    import { onMount } from "svelte";
     import Icon from "svelte-awesome/components/Icon.svelte";
     import { stringify } from "yaml";
     import Tag from "../../components/Tag.svelte";
-
-    window.history.back;
 </script>
 
 <svelte:head>
     <title>Paul's Blog - {name} tag</title>
 </svelte:head>
 
+<!-- TODO not sure how to get it to show the previous URL, may not be possible. set to empty string for now-->
+
 <a
-    href={document.referrer}
+    href=""
     class="no-underline"
     on:click={() => {
         window.history.back();
