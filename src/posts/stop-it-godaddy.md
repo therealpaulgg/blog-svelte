@@ -4,6 +4,7 @@ excerpt: Before I start, I know a lot of college students (my peers) that intern
   going to intern at GoDaddy...and this isn't meant to offend these people...
 title: Stop it, GoDaddy
 updatedAt: '2020-01-31'
+tags: [IT, rant, personal]
 ---
 
 Before I start, I know a lot of college students (my peers) that interned/are going to intern at GoDaddy...and this isn't meant to offend these people. This post is about my experience with GoDaddy as a __customer of their services.__ I myself would never want to intern at GoDaddy after these experiences...but that's just me. I am a Computer Science major who just so happens to be really good with computers and not just coding (as in I can do what IT people do), so my perspective is probably very different.

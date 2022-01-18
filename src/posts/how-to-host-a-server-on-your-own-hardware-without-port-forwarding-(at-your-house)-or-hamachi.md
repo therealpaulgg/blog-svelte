@@ -5,6 +5,7 @@ excerpt: 'Disclaimer: This guide requires you to have another server in which yo
 title: How to Host a Server On Your Own Hardware Without Port Forwarding (at your
   house) or Hamachi
 updatedAt: '2020-01-16'
+tags: [tutorial, IT, selfhosted]
 ---
 
 __Disclaimer: This guide requires you to have another server in which you can 'port forward' or at least access services on the internet. If you don't have one, get a cheap Linux server like one on DigitalOcean or Vultr.__

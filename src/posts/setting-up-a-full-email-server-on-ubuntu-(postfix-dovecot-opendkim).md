@@ -4,6 +4,7 @@ excerpt: Recently I wanted to set up a mail server for various reasons, but I ha
   always had a lot of trouble actually configuring them. In this guide, I'll o...
 title: Setting Up A Full Email Server on Ubuntu (Postfix, Dovecot, OpenDKIM)
 updatedAt: '2020-12-31'
+tags: [tutorial, IT, selfhosted]
 ---
 
 Recently I wanted to set up a mail server for various reasons, but I have always had a lot of trouble actually configuring them. In this guide, I'll outline everything that I've done to set up a mail server on Ubuntu 18.04.

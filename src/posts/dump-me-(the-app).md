@@ -4,6 +4,7 @@ excerpt: I was really bored so I made a file sharing service which uses AES GCM.
   was actually very challenging to get working as this was the first project ...
 title: Dump Me (the app)
 updatedAt: '2020-12-26'
+tags: [crypto, web, dev, security]
 ---
 
 I was really bored so I made a file sharing service which uses AES GCM. It was actually very challenging to get working as this was the first project I have personally worked on where being careful with memory usage was extremely important (Go's AES GCM implementation requires a buffer to be in memory to encrypt/decrypt).

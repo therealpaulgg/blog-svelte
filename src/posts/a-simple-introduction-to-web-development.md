@@ -5,6 +5,7 @@ excerpt: "Hi everyone! I've been developing this blog for a long time, and I thi
   \ ..."
 title: A Simple Introduction to Web Development
 updatedAt: '2021-06-12'
+tags: [web, dev, outline]
 ---
 
 Hi everyone! I've been developing this blog for a long time, and I think it's finally time to actually begin posting on it. 

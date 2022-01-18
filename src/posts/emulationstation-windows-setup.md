@@ -3,6 +3,7 @@ createdAt: '2021-08-06'
 excerpt: A guide to set up a nice fully-featured Emulation box on Windows
 title: EmulationStation Windows Setup Guide
 updatedAt: '2022-01-07'
+tags: [outline, gaming]
 ---
 
 ## Introduction

@@ -3,6 +3,7 @@ createdAt: '2021-09-16'
 excerpt: An outline of how I set my new mail server.
 title: Updated Mail Server Setup Outline (not a true guide)
 updatedAt: '2021-09-16'
+tags: [outline, selfhosted, IT]
 ---
 
 ## IRedMail
