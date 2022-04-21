@@ -1,6 +1,8 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import dayjs from "dayjs";
+    import Navbar from "../components/Navbar.svelte";
+    import Typewriter from "../components/Typewriter.svelte";
 
     import "../app.css";
 </script>
@@ -13,12 +15,20 @@
 </svelte:head>
 
 <div class="relative min-h-screen bg-slate-800 text-white font-body pb-16">
-    <nav class="bg-red-500 p-3 mb-3">
-        <div class="mx-auto container flex gap-6 text-lg">
+    <Navbar>
+        <div slot="name">
+            <div>
+                <div class="pr-4">Paul Gellai Blog</div>
+                <div class="text-base">
+                    <Typewriter words={["Hello", "There!"]} />
+                </div>
+            </div>
+        </div>
+        <div slot="links" class="flex gap-4">
             <a href="/" class="navbar-link" class:active={$page.url.pathname === "/"}>Home</a>
             <a href="https://paulgellai.dev" class="navbar-link">Main Website</a>
         </div>
-    </nav>
+    </Navbar>
 
     <div class="mx-auto container pb-16 px-2"><slot /></div>
     <footer class="bottom-0 left-0 right-0 p-3 absolute w-full bg-slate-700">

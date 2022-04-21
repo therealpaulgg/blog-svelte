@@ -43,7 +43,7 @@
         @apply mt-4;
     }
     .navbar-link {
-        @apply text-gray-200 hover:text-red-300 no-underline text-xl;
+        @apply text-slate-300 hover:text-red-300 no-underline text-xl;
     }
     .navbar-link.active {
         @apply text-white hover:text-red-300;
